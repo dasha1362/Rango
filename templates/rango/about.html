@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+	<head>
+		<title>About</title>
+	</head>
+
+	<body>
+		<h1>Rango says...</h1>
+		<div>
+			This tutorial has been put together by Darya Shumitskiy.<br />
+		</div>
+		<div>
+			<a href="/rango/">Index</a><br />
+			<img src="{% static 'about image/html.jpg' %}" alt="Picture of HTML brackets" />
+			<img src="{{ MEDIA_URL }}cat.jpg">
+		</div>
+	</body>
+
+</html>
