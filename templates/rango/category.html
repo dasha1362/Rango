@@ -2,33 +2,37 @@
 
 <html>
 
-<head>
-	<title>Rango</title>
-</head>
+	<head>
+		<title>Rango</title>
+	</head>
 
-<body>
+	<body>
 
-	<div>
-	{% if category %}
-		<h1>{{ category.name }}</h1>
-		{% if pages %}
-			<ul>
-			{% for page in pages %}
-				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-			{% endfor %}
-			</ul>
+		<div>
+		{% if category %}
+			<h1>{{ category.name }}</h1>
+			{% if pages %}
+				<ul>
+				{% for page in pages %}
+					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+				{% endfor %}
+				</ul>
+			{% else %}
+				<strong>No pages currently in category.</strong>
+			{% endif %}
 		{% else %}
-			<strong>No pages currently in category.</strong>
+			The specified category does not exist!
 		{% endif %}
-	{% else %}
-		The specified category does not exist!
-	{% endif %}
-	</div>
+		</div>
 	
-	<div>
-		<a href="/rango/">Index</a><br />
-	</div>
+		<div>
+			<a href="/rango/category/{{ category.slug }}/add_page/">Add Page</a><br />
+		</div>
 	
-</body>
+		<div>
+			<a href="/rango/">Index</a><br />
+		</div>
+	
+	</body>
 
 </html>
