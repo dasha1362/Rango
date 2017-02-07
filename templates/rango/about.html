@@ -10,6 +10,13 @@
 	<div>
 		This tutorial has been put together by Darya Shumitskiy.<br />
 	</div>
+	
+	<div>
+		{% if visits %}
+			You visited this website {{ visits }} times.
+		{% endif %}
+	</div>
+	
 	<div>
 		<img src="{% static 'about image/html.jpg' %}" alt="Picture of HTML brackets" />
 		<img src="{{ MEDIA_URL }}cat.jpg">
