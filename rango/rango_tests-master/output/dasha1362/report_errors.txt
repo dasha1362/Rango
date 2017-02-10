@@ -1,0 +1,3 @@
+I found errors while cloning your github repository: Rango===========================================================================
+
+

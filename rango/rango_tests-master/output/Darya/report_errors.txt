@@ -1,0 +1,51 @@
+rango.tests_chapter10.Chapter10ViewTests.test_about_page_shows_number_of_visits
+F
+======================================================================
+FAIL: test_about_page_shows_number_of_visits (rango.tests_chapter10.Chapter10ViewTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "h:\Workspace\tango_with_django_project\rango\rango_tests-master\temporal\rango\tests_chapter10.py", line 108, in test_about_page_shows_number_of_visits
+    self.assertIn('visits: 1'.lower(), response.content.lower())
+AssertionError: 'visits: 1' not found in '<!doctype html>\n\n\n\n<html>\n\n\t<head>\n\t\t<title>\n\t\t\trango -\n\t\t\t\n\tabout\n\n\t\t</title>\n\t</head>\n\t\n\t<body>\n\t\n\t\t<div>\n\t\t\n\t<h1>rango says...</h1>\n\t<div>\n\t\tthis tutorial has been put together by darya shumitskiy.<br />\n\t</div>\n\t\n\t<div>\n\t\t\n\t\t\tyou visited this website 1 times.\n\t\t\n\t</div>\n\t\n\t<div>\n\t\t<img src="/static/about%20image/html.jpg" alt="picture of html brackets" />\n\t\t<img src="/media/cat.jpg">\n\t</div>\n\n\t\t</div>\n\t\t\n\t\t<hr />\n\t\t\n\t\t<div>\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t</div>\n\t\t\n\t\t<hr />\n\t\t\n\t\t<div>\n\t\t\t<ul>\n\t\t\t\n\t\t\t\t<li><a href="/rango/register/">sign up</a></li>\n\t\t\t\t<li><a href="/rango/login/">login</a></li>\n\t\t\t\n\t\t\t\t<li><a href="/rango/about/">about</a></li>\n\t\t\t\t<li><a href="/rango/">index</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t\n\t</body>\n\n</html>'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.229s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter10.Chapter10ViewTests.test_index_shows_number_of_visits
+F
+======================================================================
+FAIL: test_index_shows_number_of_visits (rango.tests_chapter10.Chapter10ViewTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "h:\Workspace\tango_with_django_project\rango\rango_tests-master\temporal\rango\tests_chapter10.py", line 86, in test_index_shows_number_of_visits
+    self.assertIn('visits: 1'.lower(), response.content.lower())
+AssertionError: 'visits: 1' not found in '<!doctype html>\n\n\n\n<html>\n\n\t<head>\n\t\t<title>\n\t\t\trango -\n\t\t\t\n\tmain\n\n\t\t</title>\n\t</head>\n\t\n\t<body>\n\t\n\t\t<div>\n\t\t\n\t<h1>rango says...</h1>\n\t\n\t\they there partner!\n\t\n\t\t\n\t<h2>most liked categories</h2>\n\t\t\n\t<div>\n\t\t\n\t\t\t<strong>there are no categories present.</strong>\n\t\t\n\t</div>\n\t\t\n\t<h2>most viewed pages</h2>\n\t\t\n\t<div>\n\t\t\n\t\t\t<strong>there are no pages present.</strong>\n\t\t\n\t</div>\n\t\t\n\t<div>\n\t\t<img src="/static/images/rango.jpg" alt="picture of rango" />\n\t</div>\n\n\t\t</div>\n\t\t\n\t\t<hr />\n\t\t\n\t\t<div>\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t</div>\n\t\t\n\t\t<hr />\n\t\t\n\t\t<div>\n\t\t\t<ul>\n\t\t\t\n\t\t\t\t<li><a href="/rango/register/">sign up</a></li>\n\t\t\t\t<li><a href="/rango/login/">login</a></li>\n\t\t\t\n\t\t\t\t<li><a href="/rango/about/">about</a></li>\n\t\t\t\t<li><a href="/rango/">index</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t\n\t</body>\n\n</html>'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.233s
+
+FAILED (failures=1)
+===========================================================================
+
+
+rango.tests_chapter4.Chapter4ViewTest.test_about_contain_image
+F
+======================================================================
+FAIL: test_about_contain_image (rango.tests_chapter4.Chapter4ViewTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "h:\Workspace\tango_with_django_project\rango\rango_tests-master\temporal\rango\tests_chapter4.py", line 51, in test_about_contain_image
+    self.assertIn('img src="/static/images/', response.content)
+AssertionError: 'img src="/static/images/' not found in '<!DOCTYPE html>\n\n\n\n<html>\n\n\t<head>\n\t\t<title>\n\t\t\tRango -\n\t\t\t\n\tAbout\n\n\t\t</title>\n\t</head>\n\t\n\t<body>\n\t\n\t\t<div>\n\t\t\n\t<h1>Rango says...</h1>\n\t<div>\n\t\tThis tutorial has been put together by Darya Shumitskiy.<br />\n\t</div>\n\t\n\t<div>\n\t\t\n\t\t\tYou visited this website 1 times.\n\t\t\n\t</div>\n\t\n\t<div>\n\t\t<img src="/static/about%20image/html.jpg" alt="Picture of HTML brackets" />\n\t\t<img src="/media/cat.jpg">\n\t</div>\n\n\t\t</div>\n\t\t\n\t\t<hr />\n\t\t\n\t\t<div>\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t</div>\n\t\t\n\t\t<hr />\n\t\t\n\t\t<div>\n\t\t\t<ul>\n\t\t\t\n\t\t\t\t<li><a href="/rango/register/">Sign Up</a></li>\n\t\t\t\t<li><a href="/rango/login/">Login</a></li>\n\t\t\t\n\t\t\t\t<li><a href="/rango/about/">About</a></li>\n\t\t\t\t<li><a href="/rango/">Index</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t\n\t</body>\n\n</html>'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.229s
+
+FAILED (failures=1)
+===========================================================================
+
+
