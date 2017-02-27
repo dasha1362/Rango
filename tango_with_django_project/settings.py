@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'registration',
+	'bootstrap_toolkit'
 ]
 
 MIDDLEWARE = [
@@ -105,6 +107,21 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LOGIN_URL = '/rango/login/'
+
+# If True, users can register
+REGISTRATION_OPEN = True
+
+# One-week activation window
+ACCOUNT_ACTIVATION_DAYS = 7
+
+# If True, user is automatically logged in
+REGISTRATION_AUTO_LOGIN = True
+
+# The page you want user redirected to after logging in
+LOGIN_REDIRECT_URL = '/rango/'
+
+# The page users redirected to if not logged in and trying to access pages that require logging in
+LOGIN_URL = '/accounts/login/'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
